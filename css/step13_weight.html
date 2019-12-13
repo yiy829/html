@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        li{
+            background-color: yellow; /* 가중치 : 1점 */
+        }
+        ul li{
+            background-color: red; /* 가중치 : 엘리먼트 2개 2점 */
+        }
+        .active {
+            background-color: pink; /* 가중치 : 클래스는 10점 */
+        }
+        li.active {
+            background-color: blue; /*  가중치 : 엘리먼트 1개 추가 11점 */
+        }
+        #one {
+            background-color: brown !important; /* 가중치 : id는 100점 !important는 10000점*/
+        }
+    </style>
+    <title>step13_weight.html</title>
+</head>
+<body>
+   <div class="wrapper">
+       <div class="nav">
+           <ul>
+                <li class="active" id="one" style="background-color: cornflowerblue !important;">하나</li> 
+                <!-- 가중치 : 인라인은 1000점  !important하면 11000점 -->
+           </ul>
+       </div>
+   </div>
+
+</body>
+</html>

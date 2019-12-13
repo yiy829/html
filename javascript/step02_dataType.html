@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step02_dataType.html</title>
+    <script>
+        //1. number type
+        let num1=  10; //int
+        let num2 = 20.1 // float
+
+        console.log(typeof num1); //number
+        console.log(typeof num2); //number
+
+        //2. String Type
+        let myName = "성영한";
+        console.log(typeof myName); //string
+        let myNum1 = "10";
+        console.log(myNum1 == num1); //true 값비교
+        console.log(myNum1 === num1); //false 자료형 비교 
+
+        //3. boolean type
+        let isRun = true;
+        let isGreater = 10 > 5;
+
+        console.log(typeof isRun); //boolean
+
+        //4. undefined type
+        let test;
+        let test1 = undefined // 둘다 써도 된다
+        console.log(typeof test); //undefined
+        console.log(test == "undefined");
+        console.log(test === undefined);
+        
+        //5. array type(object)
+        const ourNames = ['성영한', '잡스', '베조스'];
+        console.log(typeof ourNames); //object (배열)
+
+        //6. plain object type
+        const obj = {num : i, name:'성영한', isMan : true};
+        console.log(typeof obj); //object
+        //정확히 plain object 나중에 꺼낼때도 key값으로 꺼내면 됌
+        //나중에 복잡해짐
+
+        //7. function type
+        //함수식
+        const f = function(){ }
+
+        //선언적 함수
+        function sum(){
+
+        }
+        console.log(typeof f); //function
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
