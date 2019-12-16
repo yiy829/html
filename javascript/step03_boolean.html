@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step03_boolean.html</title>
+</head>
+<script>
+
+    /*
+    boolean type
+    1. true, false를 직접 작성하거나, 비교연산 또는 논리연산의 결과로 만들어진다.
+    2. boolean type 변수 이름은 대화식으로 작성한다.(is...)
+    */
+
+    let isRun = true;
+    let isWait = false;
+    let isSmalleer = 10 < 5;
+    let isEqual = 10 == 1000;
+    let isDifference = 10 != 10;
+    if(isRun){
+        console.log('달리고 있어요.');
+    }
+
+    //falcy value
+    let a = 0;
+    let b = ''; //빈 문자열
+    let c; //undefined
+    let d = parseInt("abc"); //NaN
+    let g = null;
+    if(a){ // a,b,c,d,g 넣어보기
+    // a=1(a에 1을 대입)할 수 있다. 당연히 0이 아니니 true
+        console.log("true");
+    }else{
+        console.log("false");
+    }
+
+
+
+</script>
+</html>

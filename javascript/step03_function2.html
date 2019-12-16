@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step03_function2.html</title>
+</head>
+<script>
+    //생성자 함수
+    const Student = function(name, korean, math){
+        this.name = name;
+        this.korean = korean;
+        this.math = math;
+        this.getSum = function(){
+            return this.korean + this.math;
+        }
+    }
+
+    const s1 = new Student("성영한1", 90, 90);
+    console.log(s1.name + "," + s1.korean + "," + s1.math);
+    console.log("sum : " + s1.getSum());
+
+    String.prototype.trim = function(){
+        return this.replace(/(^\s*)|(\s*$)/gi,"");
+    }
+
+    let str = "         This is the string          ";
+
+    console.log("---"+str+"---");
+    str1 = str.trim();
+    console.log("---"+str1+"---");
+
+
+    Array.prototype.getMax = function(){
+        let max = 0;
+        for(let value of this){
+            max = Math.max(max,value);
+        }
+        return max;
+    }
+
+    const array = [1,2,3,4,5];
+    console.log(array.getMax());
+
+
+
+</script>
+</html>

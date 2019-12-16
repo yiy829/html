@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step04_dom.html</title>
+<script>
+    window.onload = function(){
+        const h1 = document.createElement("h1");
+    const textNode = document.createTextNode("Hello Hi");
+    h1.appendChild(textNode);
+    document.body.appendChild(h1); 
+    }
+// body객체가 있으니 1)<body> 이후에 만들거나, 2)html까지 끝나고 나서 만들거나
+// 3)onload function을 만들어 그 안에 넣는 것도 있음.(가장 마지막에 실행되는 function)
+</script>
+</head>
+<body>
+
+</body>
+<script>
+    window.onload = function(){
+        const h1 = document.createElement("h1");
+    const textNode = document.createTextNode("Hello Hi");
+    h1.appendChild(textNode);
+    document.body.appendChild(h1); 
+    }
+</script>
+</html>
+<script>
+console.log("end of html");
+</script>
